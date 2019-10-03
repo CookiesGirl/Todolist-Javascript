@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyLittleTo-doList</title>
+    <meta name="description" content="Première version de l'application  MyLittleTodoList">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <link rel="Stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+  <div id="header">
+    <img src="images/rubik.png" alt="logo" />
+    <h1> My Little To-Do List</h1>
+  </div>
+
+  <div id="inputbar">
+    <input type="text" id="input" placeholder="Entrez votre tâche ici!">
+    <span onclick="newElement()" class="addBtn">OK</span>
+  </div>
+
+  <div id="content">
+    <ul id="tasklist">
+      <li class="checked">Tache réalisée</li>
+      <li>A faire</li>
+      <li>A faire</li>             
+    </ul> 
+  </div>
+  
+  <div id="footer">2019 - copyright Audrey Diemer !</div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+    /*----------------
+          HEADER 
+    ---------------- */
+#header{
+  background:#fff;
+  margin: 0rem; 
+  padding: 1rem; 
+  border: 1px solid #fff;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  color: teal;
+}
+
+   /*----------------
+          INPUTBAR
+    ---------------- */
+  /* -- barre  d'ajout --*/
+#inputbar {
+  background: teal;
+  margin: 0rem 0rem 3rem 0rem;
+  padding: 0.8rem;
+  color: #fff;
+}
+
+/*-- redimensionner l'élément afin qu'il contienne tous les éléments flottants à l'intérieur--*/
+#inputbar:after {
+  content: "";
+  display: block; 
+  clear: both;
+}
+
+/*-- champs input --*/
+input {
+  margin: 0;
+  width: 87%;
+  padding: 0.5rem;
+  float: left;
+  font-size: 0.8rem;
+  color : rgb(197, 197, 197);
+}
+  
+  /* -- bouton OK --*/
+  .addBtn {
+    cursor: pointer;
+    background : rgb(3, 165, 165);
+    width: 8%;
+    padding: 0.6rem;
+    color: #fff;
+    float: left;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+    /* -- bouton OK au survol--*/
+  .addBtn:hover {
+    background-color:rgb(0, 218, 218);
+  }
+
+   /*----------------
+          CONTENT
+    ---------------- */
+
+    #content{
+    margin: 6rem; 
+    }
+ /*-- Pas de margin, padding ou puces--*/
+  #tasklist {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+  }
+  /*-- Liste de Tache --*/
+  #tasklist li {
+    /*--bloquer le cadre de la boite pour contenir le bouton de supression--*/
+    position: relative;
+    /*-- Changer la forme du curseur en main--*/
+    cursor: pointer;
+    background: rgb(3, 165, 165);
+    padding: 0.8rem  0.4rem  1rem  2.2rem;
+    font-size: 1rem;
+    color : #fff;
+    border-bottom : 0.2rem solid #fff;
+  }
+
+  /*-- Couleur au survol--*/
+  #tasklist li:hover {
+    background:rgb(0, 218, 218);
+  }
+  
+  /*-- ligne "checkée --*/
+  #tasklist li.checked {
+    background: #ddd;
+    color: rgb(201, 201, 201);
+  }
+    /*-- ligne "checkée au survol--*/
+  #tasklist li.checked:hover {
+    background: #eee;
+  }
+
+  /*--- Bouton  de suppression--*/
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.9rem;
+  }
+   /*--- Bouton  de suppression au survol--*/
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+   /*----------------
+          FOOTER
+    ---------------- */
+#footer{
+/*--bloquer le footer en bas --*/
+  position: absolute; 
+  bottom: 0px;
+  width:98%;
+  background-color: teal;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  padding: 8px;
+}
+
+   /*----------------
+          BODY
+    ---------------- */
+body{
+  background-image:url(images/bkg.jpg);
+  margin: 0px; 
+  font-family: 'Montserrat', sans-serif;
+    }
